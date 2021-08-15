@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/rajashekhar reddy/IdeaProjects/TestDemo">
+        <classes>
+            <class name="org.Demo.Loan">
+            <methods>
+                <include name="HomeRegistered"/>
+                <include name="HomeActivated"/>
+                <include name="HomeCreated"/>
+                <include name="HomeCredited"/>
+            </methods>
+            </class>
+            <class name="org.Demo.NewPersonalLoan">
+            <methods>
+                <include name="PersonalRegistered"/>
+                <include name="PersonalActivated"/>
+                <include name="PersonalCreated"/>
+                <include name="PersonalCredited"/>
+            </methods>
+        </class>
+            <class name="org.Demo.PersonalLoan">
+                <methods>
+                    <include name="personalLoanRegistration"/>
+                    <include name="personalLoanActivate"/>
+                    <include name="verifyPersonalLoanDocuments"/>
+                    <include name="creditPersonalLoanToAccount"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
